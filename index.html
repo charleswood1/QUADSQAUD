@@ -1,188 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QUAD SQUAD - Small Group Discipleship</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Merriweather', 'serif'],
-                    },
-                    colors: {
-                        brand: {
-                            50: '#f0f9ff',
-                            100: '#e0f2fe',
-                            500: '#0ea5e9',
-                            600: '#0284c7',
-                            900: '#0c4a6e',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#174f46">
+<meta name="description" content="Four friends. Honest questions. Discover Jesus together. Start a Quad Squad with a simple Gospel of Mark reading plan and five questions for meaningful conversation.">
+<meta property="og:title" content="Quad Squad | Four Friends Discovering Jesus Together">
+<meta property="og:description" content="A simple invitation to friendship, honest questions, and discovering Jesus in the Gospel of Mark.">
+<meta property="og:type" content="website">
+<title>Quad Squad | Four Friends Discovering Jesus Together</title>
+<style>
+:root{--paper:#faf8f2;--white:#fff;--ink:#223a34;--muted:#52635b;--green:#174f46;--deep:#103d36;--mint:#e6eee6;--gold:#eed296;--line:#d7ded3;--radius:22px;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}h1,h2,h3,p{margin-top:0}h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;line-height:1.1;letter-spacing:-.035em}h1{font-size:clamp(2.8rem,6.5vw,5rem);margin-bottom:25px}h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:20px}h3{font-size:1.15rem;line-height:1.4;margin-bottom:12px}a{color:var(--green);text-underline-offset:4px}button,input,select,textarea{font:inherit}button,a,input,select,textarea{touch-action:manipulation}button{cursor:pointer}button:disabled{cursor:wait;opacity:.6}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #966014;outline-offset:5px}svg{display:block}section{padding:88px 0}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}.eyebrow{font-size:.75rem;font-weight:750;letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px;color:var(--green)}.lead{font-size:1.14rem;color:var(--muted);max-width:690px}.muted{color:var(--muted)}.small{font-size:.87rem}.section-top{max-width:700px;margin-bottom:36px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:49px;padding:12px 21px;border-radius:9px;border:1px solid var(--green);background:var(--green);color:white;text-decoration:none;font-weight:650;line-height:1.4;text-align:center;transition:background .18s,transform .18s}.button:hover{background:var(--deep);transform:translateY(-1px)}.button.secondary{background:transparent;color:var(--green)}.button.secondary:hover{background:var(--mint)}.actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.skip{position:fixed;top:-100px;left:15px;background:white;padding:12px;z-index:100}.skip:focus{top:10px}.site-header{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);background:rgba(250,248,242,.97)}.nav-wrap{display:flex;align-items:center;justify-content:space-between;min-height:82px;gap:20px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);flex-shrink:0}.brand-name{font-size:.98rem;font-weight:800;letter-spacing:.09em;display:block;line-height:1.3}.brand-sub{font-size:.72rem;letter-spacing:.05em;color:var(--muted)}.logo{width:42px;height:42px;flex-shrink:0}.nav-links{display:flex;gap:22px;align-items:center}.nav-links>a:not(.button){font-size:.88rem;text-decoration:none;font-weight:600}.menu-button{display:none;background:transparent;border:1px solid var(--line);border-radius:8px;padding:9px 13px;color:var(--green)}.hero{padding:74px 0 80px}.hero-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:60px;align-items:center}.hero .lead{max-width:590px}.hero-note{margin:20px 0 0;font-size:.9rem;color:var(--muted)}.hero-art{background:#e5ece2;border-radius:140px 140px 28px 28px;padding:36px 22px 26px;position:relative;overflow:hidden}.hero-art svg{width:100%;height:auto}.art-note{text-align:center;color:var(--green);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin:0}.promise{display:flex;gap:24px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px;margin-top:32px;font-size:.86rem;color:var(--muted)}.white{background:var(--white);border-block:1px solid var(--line)}.grid-four{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{padding:26px;border:1px solid var(--line);border-radius:var(--radius);background:var(--white)}.card p:last-child{margin-bottom:0}.step-number{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--mint);color:var(--green);font-weight:750;margin-bottom:22px}.card p{font-size:.95rem;color:var(--muted)}.rhythm-layout{display:grid;grid-template-columns:.9fr 1.2fr;gap:80px}.questions{list-style:none;padding:0;margin:0;counter-reset:question}.questions li{counter-increment:question;position:relative;padding:0 0 23px 56px;border-bottom:1px solid var(--line);margin-bottom:24px}.questions li:before{content:counter(question);position:absolute;left:0;top:0;display:grid;place-items:center;width:35px;height:35px;background:var(--mint);border-radius:50%;color:var(--green);font-weight:700}.questions h3{margin-bottom:7px}.questions p{font-size:.95rem;color:var(--muted);margin-bottom:0}.lenses{padding:22px;background:var(--mint);border-radius:15px;margin-top:28px}.lenses p{margin:8px 0;font-size:.92rem}.lenses strong{color:var(--green)}.scripture{background:var(--green);color:white;text-align:center;padding:60px 0}.scripture blockquote{font:italic clamp(1.5rem,3vw,2rem)/1.5 Georgia,serif;max-width:820px;margin:0 auto 18px}.scripture p{font-size:.9rem;color:#dce9df;margin:0}.meeting-list{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.meeting{display:grid;grid-template-columns:44px 1fr;gap:18px;border:1px solid var(--line);border-radius:18px;padding:26px;background:white}.meeting .step-number{margin:0}.meeting h3{margin-bottom:5px}.reading{font-weight:650;color:var(--green);margin-bottom:12px}.meeting p:last-child{color:var(--muted);font-size:.95rem;margin-bottom:0}.note{border-left:3px solid #c09a50;padding:12px 20px;background:#f4eddf;margin:25px 0 0;font-size:.94rem}.start{background:var(--mint)}.start-layout{display:grid;grid-template-columns:1fr 1fr;gap:64px}.invite{border:1px solid #c5d4c3;border-radius:20px;padding:27px;background:#f6f8f0}.invite blockquote{font:1.12rem/1.7 Georgia,serif;margin:0 0 20px}.form-panel{background:white;padding:30px;border-radius:22px;border:1px solid var(--line)}label{display:block;font-size:.9rem;font-weight:650;margin:15px 0 6px}input,select,textarea{width:100%;border:1px solid #a8b6a9;border-radius:8px;background:white;padding:11px 12px;color:var(--ink);font-size:1rem}textarea{resize:vertical;min-height:90px}.form-panel h3{font-size:1.35rem}.form-panel .button{margin-top:19px;width:100%}.status{font-size:.88rem;min-height:1.5em;margin:12px 0 0;color:var(--green)}.faq-wrap{max-width:850px}.faq details{border-bottom:1px solid var(--line);padding:19px 0}.faq summary{cursor:pointer;font-weight:650;padding:5px 30px 5px 0}.faq details p{color:var(--muted);margin:14px 0 3px;font-size:.97rem}.resource-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.resource .button{margin-top:8px}.footer{padding:44px 0;background:var(--deep);color:#e0e8df}.footer a{color:#e0e8df}.footer-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.footer-title{font-weight:750;letter-spacing:.08em}.footer p{margin-bottom:12px}.footer-bottom{border-top:1px solid #547167;margin-top:25px;padding-top:23px;font-size:.8rem;color:#c4d2c8}.footer-links{display:flex;gap:20px;flex-wrap:wrap;font-size:.9rem}[hidden]{display:none!important}
+@media(max-width:940px){.hero-grid{gap:30px}.grid-four{grid-template-columns:1fr 1fr}.rhythm-layout,.start-layout{gap:35px}.nav-links{gap:13px}.nav-links>a:not(.button){font-size:.8rem}}
+@media(max-width:720px){section{padding:60px 0}.wrap{width:calc(100% - 36px)}.hero{padding:42px 0 55px}.hero-grid,.rhythm-layout,.start-layout,.resource-grid{grid-template-columns:1fr}.hero-grid{gap:34px}.hero-art{max-width:430px;width:100%;margin:auto;padding:20px 25px}.hero-art svg{max-height:300px}.promise{gap:12px 20px}.meeting-list{grid-template-columns:1fr}.nav-wrap{min-height:74px;flex-wrap:wrap;padding:12px 0}.menu-button{display:block}.nav-links{width:100%;flex-direction:column;align-items:stretch;padding:10px 0 5px;gap:5px}.nav-links a{padding:11px!important;font-size:.95rem!important}.nav-links .button{margin-top:5px}.nav-links.mobile-closed{display:none}.hero h1{font-size:clamp(2.7rem,10vw,4rem)}.form-panel{padding:23px}.scripture{padding:45px 0}}
+@media(max-width:430px){.grid-four{grid-template-columns:1fr}.actions{align-items:stretch;flex-direction:column}.actions .button{width:100%}.brand-name{font-size:.88rem}.card{padding:24px}.meeting{padding:22px;gap:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.site-header,.hero-art,.start,.footer,.button,.skip{display:none!important}body{background:white;font-size:11pt}section{padding:20px 0;break-inside:avoid}.wrap{width:100%;max-width:none}.hero-grid,.rhythm-layout,.resource-grid{display:block}.scripture{background:white;color:black}.scripture p{color:black}.card,.meeting{break-inside:avoid}details p{display:block!important}}
+</style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans antialiased flex flex-col min-h-screen">
-
-    <!-- Navigation -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <div class="flex-shrink-0 flex items-center gap-2">
-                    <!-- Placeholder Logo Icon -->
-                    <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                    </svg>
-                    <span class="font-bold text-xl tracking-wider text-brand-900">QUAD SQUAD</span>
-                </div>
-                <div>
-                    <a href="#about" class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
-                    <a href="#pillars" class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">The 4 Pillars</a>
-                    <a href="#join" class="bg-brand-600 text-white hover:bg-brand-500 px-4 py-2 rounded-md text-sm font-medium transition-colors shadow-sm ml-2">Join a Squad</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section with The Great Commission -->
-    <header class="relative bg-brand-900 text-white overflow-hidden">
-        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1529070538774-1843cb1665e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center opacity-10"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10 text-center flex flex-col items-center">
-            
-            <h1 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
-                Fulfilling the Call, <span class="text-brand-500">Together.</span>
-            </h1>
-            
-            <!-- The Hook / Quote -->
-            <div class="max-w-4xl bg-white/10 backdrop-blur-sm border border-white/20 p-8 md:p-12 rounded-2xl shadow-2xl mt-4 mb-10">
-                <blockquote class="font-serif text-xl md:text-2xl italic leading-relaxed text-gray-100">
-                    “I have called you friends, for all things that I have heard from My Father I have made known to you.”
-                </blockquote>
-                <p class="mt-4 text-brand-100 font-medium text-sm md:text-base">— John 15:15</p>
-            </div>
-
-            <p class="mt-4 max-w-2xl text-lg md:text-xl text-gray-300">
-                Welcome to QUAD SQUAD. We are dedicated to providing the encouragement, instruction, tools, and mentoring you need for effective small group discipleship.
-            </p>
-            
-            <div class="mt-10 flex gap-4 justify-center">
-                <a href="#join" class="px-8 py-3 bg-brand-500 hover:bg-brand-400 text-white font-semibold rounded-lg shadow-lg transition-transform transform hover:-translate-y-0.5">
-                    Start Your Journey
-                </a>
-                <a href="#pillars" class="px-8 py-3 bg-transparent border border-white/30 hover:bg-white/10 text-white font-semibold rounded-lg transition-colors">
-                    Learn More
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- The 4 Pillars Section -->
-    <section id="pillars" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">The Four Pillars of QUAD SQUAD</h2>
-                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-                    We equip believers to carry out the Great Commission through intentional, life-on-life relationships built on four foundational elements.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Pillar 1 -->
-                <div class="bg-gray-50 rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow text-center">
-                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Encouragement</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Walk alongside others in a supportive environment. Share burdens, celebrate victories, and spur one another on toward love and good deeds.
-                    </p>
-                </div>
-
-                <!-- Pillar 2 -->
-                <div class="bg-gray-50 rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow text-center">
-                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Instruction</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Dive deep into God's Word together. Learn sound doctrine and practical application to build a strong, unshakeable faith foundation.
-                    </p>
-                </div>
-
-                <!-- Pillar 3 -->
-                <div class="bg-gray-50 rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow text-center">
-                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Tools</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Access proven resources, study guides, and practical methodologies designed to make disciple-making approachable and effective.
-                    </p>
-                </div>
-
-                <!-- Pillar 4 -->
-                <div class="bg-gray-50 rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow text-center">
-                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Mentoring</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Experience life-on-life investment. Learn from those who have gone before you and prepare to invest into those coming after you.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section id="join" class="py-16 bg-brand-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-brand-900 mb-6">Ready to Answer the Call?</h2>
-            <p class="text-lg text-gray-700 mb-8">
-                Join a small group today and start your journey of growth, community, and active discipleship.
-            </p>
-            <form class="max-w-md mx-auto flex flex-col gap-4">
-                <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none">
-                <input type="email" placeholder="Your Email Address" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none">
-                <button type="button" class="w-full bg-brand-600 text-white font-bold py-3 rounded-md hover:bg-brand-700 transition-colors shadow-md">
-                    Connect With A Squad
-                </button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-12 mt-auto">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center">
-            
-            <div class="flex items-center gap-2 mb-6">
-                <svg class="w-6 h-6 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                </svg>
-                <span class="font-bold text-lg text-white tracking-wider">QUAD SQUAD</span>
-            </div>
-            
-            <p class="mb-6 text-sm">Empowering believers through small group discipleship.</p>
-            
-            <div class="border-t border-gray-800 w-full max-w-3xl pt-8 mt-2">
-                <!-- Copyright Attribution for NASB 95 as requested -->
-                <p class="text-xs text-gray-500 max-w-4xl mx-auto leading-relaxed">
-                    Scripture quotations taken from the (NASB®) New American Standard Bible®, 
-                    Copyright © 1960, 1971, 1977, 1995 by The Lockman Foundation. 
-                    Used by permission. All rights reserved. <a href="http://www.lockman.org" target="_blank" class="hover:text-gray-300 underline">www.lockman.org</a>
-                </p>
-                <p class="text-xs text-gray-600 mt-4">
-                    &copy; 2026 Quad Squad. All rights reserved.
-                </p>
-            </div>
-        </div>
-    </footer>
-
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap nav-wrap">
+<a class="brand" href="#top" aria-label="Quad Squad home">
+<svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="13" fill="#174f46"/><g fill="#eed296"><circle cx="16" cy="16" r="5"/><circle cx="32" cy="16" r="5"/><circle cx="16" cy="32" r="5"/><circle cx="32" cy="32" r="5"/></g><path d="M22 24h4m-2-2v4" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+<span><span class="brand-name">QUAD SQUAD</span><span class="brand-sub">The Gospel Group</span></span>
+</a>
+<button class="menu-button" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>Menu</button>
+<nav id="site-nav" class="nav-links" aria-label="Main navigation"><a href="#how">How it works</a><a href="#gatherings">First four gatherings</a><a href="#questions">Questions</a><a class="button" href="#start">Start a group</a></nav>
+</div>
+</header>
+<main id="main">
+<section class="hero" id="top">
+<div class="wrap hero-grid">
+<div><p class="eyebrow">Friendship · The Gospels · A next step together</p><h1>Four friends.<br>Honest questions.<br>Discover Jesus together.</h1>
+<p class="lead">Gather with three friends to read the Gospel of Mark, share what stands out, and explore what it means to follow Jesus. You don’t need all the answers—just a willingness to read, listen, and learn together.</p>
+<div class="actions"><a class="button" href="#start">Start a group of four</a><a class="button secondary" href="#how">See how it works</a></div>
+<p class="hero-note">Curious about Jesus? Already following him? Bring your questions and make room for one another.</p>
+<div class="promise"><span>You + three friends</span><span>A simple reading plan</span><span>Real-life conversation</span></div></div>
+<div class="hero-art">
+<svg viewBox="0 0 420 375" role="img" aria-labelledby="art-title art-desc"><title id="art-title">Four friends around a table</title><desc id="art-desc">An illustration of four people gathered around an open book, sharing a conversation.</desc>
+<circle cx="210" cy="185" r="156" fill="#d1dfce"/><path d="M50 330Q210 285 370 330" stroke="#b0c3ab" stroke-width="2" fill="none"/>
+<g><path d="M137 119q-12-57 28-64 42 0 34 64" fill="#334b40"/><circle cx="167" cy="100" r="27" fill="#be825d"/><path d="M123 189q0-68 45-64 45-2 50 64" fill="#bd754c"/>
+<path d="M230 98q3-42 40-40 29 3 31 41" fill="#58473b"/><circle cx="267" cy="104" r="27" fill="#edc7a0"/><path d="M225 191q-1-64 42-62 43 0 45 62" fill="#f2d598"/></g>
+<ellipse cx="210" cy="229" rx="148" ry="70" fill="#a77d54"/><ellipse cx="210" cy="219" rx="148" ry="66" fill="#d7b48a"/>
+<path d="M87 238l-13 64m260-64 13 64" stroke="#81644b" stroke-width="10" stroke-linecap="round"/>
+<path d="M174 202q18-9 36 0 17-9 35 0v37q-17-7-35 0-18-7-36 0z" fill="#fffaf0" stroke="#8c7b5d" stroke-width="2"/><path d="M210 202v37m-28-26 19 2m-19 7 19 2m17-9 18-2m-18 11 18-2" stroke="#aa9d81" stroke-width="2"/>
+<ellipse cx="127" cy="211" rx="13" ry="7" fill="#f8f0df"/><path d="M114 211v14q13 12 26 0v-14" fill="#f8f0df"/><ellipse cx="287" cy="208" rx="12" ry="6" fill="#edf2e7"/><path d="M275 208v15q12 10 24 0v-15" fill="#edf2e7"/>
+<path d="M62 258q-13-55 23-63 34-5 42 38" fill="#242f2a"/><circle cx="96" cy="237" r="28" fill="#875239"/><path d="M47 341q-3-77 48-77 49 1 52 77" fill="#496c65"/><path d="M296 238q-1-50 36-49 32 5 29 55" fill="#b4a697"/><circle cx="328" cy="237" r="28" fill="#f0c6a2"/><path d="M277 341q-1-77 50-77 48 0 52 77" fill="#e7bd76"/>
+<path d="M125 284l39-34m135 33-35-31" stroke="#875239" stroke-width="13" stroke-linecap="round"/><path d="M300 283l-36-31" stroke="#f0c6a2" stroke-width="13" stroke-linecap="round"/>
+</svg><p class="art-note">A small circle. Room for real conversation.</p></div>
+</div></section>
+<section id="how" class="white"><div class="wrap"><div class="section-top"><p class="eyebrow">Simple enough to begin</p><h2>Not a lecture.<br>A conversation with friends.</h2><p class="lead">Quad Squad is a small Gospel group: four people making space for friendship, Scripture, prayer, and a practical response to what they discover.</p></div>
+<div class="grid-four">
+<article class="card"><span class="step-number" aria-hidden="true">1</span><h3>Gather four friends</h3><p>Invite three people to join you. Choose a welcoming place and a regular time that work for everyone.</p></article>
+<article class="card"><span class="step-number" aria-hidden="true">2</span><h3>Open the Gospel</h3><p>Begin with Mark. Read the passage, notice what stands out, and bring your honest questions.</p></article>
+<article class="card"><span class="step-number" aria-hidden="true">3</span><h3>Share your discoveries</h3><p>Listen to each other. Explore what the text says, how it touches your life, and how you might respond.</p></article>
+<article class="card"><span class="step-number" aria-hidden="true">4</span><h3>Keep walking together</h3><p>Encourage one another, pray, and take a next step. As you grow, consider who else you could invite to discover Jesus.</p></article>
+</div></div></section>
+<section id="rhythm"><div class="wrap rhythm-layout"><div><p class="eyebrow">A familiar rhythm. A fresh conversation.</p><h2>Five questions.<br>Life shared honestly.</h2><p class="lead">Each gathering makes room for everyday life and discovering Jesus. These questions give the conversation direction without turning it into a presentation.</p><div class="lenses"><h3>Head. Heart. Hands.</h3><p><strong>Head:</strong> What did you learn from the passage?</p><p><strong>Heart:</strong> What feelings or questions does it bring up?</p><p><strong>Hands:</strong> How might you respond this week?</p></div></div>
+<ol class="questions"><li><h3>How are you doing?</h3><p>Share the highs and lows of your week. Listen to what life is really like for one another.</p></li><li><h3>Where are we going?</h3><p>Remember our direction: following Jesus and helping others discover him. Return to Mark 1:17 together.</p></li><li><h3>What are you discovering in the Gospel?</h3><p>Share something that stood out in the reading. Explore it through Head, Heart, and Hands.</p></li><li><h3>How are your people?</h3><p>How are your friends and family doing? Talk about ways to care for them and pray together.</p></li><li><h3>What is your next step?</h3><p>Choose one practical response to what you’ve read. Pray for one another as you put it into practice.</p></li></ol>
+</div></section>
+<aside class="scripture" aria-label="Our foundation"><div class="wrap"><blockquote>Friendship is the setting.<br>Jesus is the focus.<br>The Gospel is where we begin.</blockquote><p>Read John 15:15 together and consider Jesus’ invitation to friendship.</p></div></aside>
+<section id="gatherings" class="white"><div class="wrap"><div class="section-top"><p class="eyebrow">Your first four gatherings</p><h2>A starting path through Mark.</h2><p class="lead">Begin by reading together. Then read between gatherings and return with something you noticed, a question, or an insight to share.</p></div>
+<div class="meeting-list"><article class="meeting"><span class="step-number" aria-hidden="true">1</span><div><h3>Where are we going?</h3><p class="reading">Read Mark 1 together</p><p>Get to know one another, explain the purpose of the group, and practice the five questions. Highlight something that stands out. Before the next gathering, read Mark 2–6.</p></div></article>
+<article class="meeting"><span class="step-number" aria-hidden="true">2</span><div><h3>Share what you’re discovering</h3><p class="reading">Discuss Mark 2–6</p><p>Return to Mark 1:17, then share insights from the reading. Use Head, Heart, and Hands to explore a passage. Before the next gathering, read Mark 7–11.</p></div></article>
+<article class="meeting"><span class="step-number" aria-hidden="true">3</span><div><h3>Listen, reflect, respond</h3><p class="reading">Discuss Mark 7–11</p><p>Keep the five-question rhythm. Make room for questions and encourage one another’s next steps. Before the next gathering, read Mark 12–16.</p></div></article>
+<article class="meeting"><span class="step-number" aria-hidden="true">4</span><div><h3>Look back—and take a next step</h3><p class="reading">Discuss Mark 12–16</p><p>Share what you are discovering about Jesus. Reflect on your response and decide together what to read or explore next. These four gatherings are a beginning, not a graduation.</p></div></article></div>
+<p class="note">A starting path, not a race. If the reading feels too much, take smaller sections and add more gatherings. Make room for people who arrive with questions—or without having finished the reading.</p></div></section>
+<section class="start" id="start"><div class="wrap start-layout"><div><p class="eyebrow">Start with an invitation</p><h2>You don’t need a program.<br>You need a few friends.</h2><p class="lead">Think of three people you could invite. Ask personally, choose a time, and start with Mark 1. There’s no registration required on this website.</p><div class="invite"><h3>Make the invitation your own</h3><blockquote id="invite-text">“Would you be interested in getting together with a few friends to read about Jesus? We could start with Mark, share what stands out, and talk through our questions. Maybe over coffee?”</blockquote><button class="button secondary" id="copy-invite" type="button" hidden>Copy this invitation</button><p class="status" id="copy-status" role="status" aria-live="polite"></p></div></div>
+<div class="form-panel"><h3>Make a simple first-meeting plan</h3><p class="muted small">Create a text file you can keep or share yourself. This planner does not register a group or send an invitation.</p>
+<form id="planner"><label for="plan-name">Your name <span class="muted">(optional)</span></label><input id="plan-name" name="host" autocomplete="given-name" maxlength="100" placeholder="First name is enough">
+<label for="plan-place">Where will you meet? <span class="muted">(optional)</span></label><input id="plan-place" name="place" maxlength="180" placeholder="For example: a favorite coffee shop">
+<label for="plan-time">When? <span class="muted">(optional)</span></label><input id="plan-time" name="time" maxlength="180" placeholder="For example: Tuesday at 7 p.m.">
+<label for="plan-notes">Anything to remember? <span class="muted">(optional)</span></label><textarea id="plan-notes" name="notes" maxlength="800" placeholder="Bring a Bible or use a Bible app. Read Mark 1 together."></textarea>
+<button class="button" id="plan-download" type="submit" hidden>Download my meeting plan</button><noscript><p>To make your plan, write down your meeting place and time, invite three friends, and bring Mark 1 and the five questions above. Downloads require JavaScript.</p></noscript><p class="small muted">Your entries stay in this page while it is open. They are not submitted to us or saved by this planner. A downloaded file is saved on your device.</p><p id="plan-status" class="status" role="status" aria-live="polite"></p></form></div></div></section>
+<section id="questions"><div class="wrap faq-wrap"><div class="section-top"><p class="eyebrow">Before you begin</p><h2>Good questions are welcome.</h2></div><div class="faq">
+<details><summary>Do I need to know the Bible already?</summary><p>No. You can begin by reading the passage together. Share what you notice and ask what you don’t understand. The facilitator is a fellow learner, not someone who must have every answer.</p></details>
+<details><summary>Can I join if I’m not sure what I believe?</summary><p>Yes. The purpose is openly Christian: discovering Jesus in the Gospels and exploring what it means to follow him. You are welcome to bring questions, uncertainty, and a different point of view. Listen respectfully and give one another room to respond honestly.</p></details>
+<details><summary>Does “four” include the facilitator?</summary><p>Yes: you and three friends. One person helps the group get started and keeps the conversation moving, but everyone is invited to read, listen, and contribute.</p></details>
+<details><summary>Where and how long should we meet?</summary><p>Choose a setting where you can hear one another and talk comfortably: a home, a coffee shop, or another suitable place. As a starting suggestion, allow 60–90 minutes, then adjust together. Agree on the frequency rather than assuming everyone has the same availability.</p></details>
+<details><summary>What does it cost?</summary><p>There is no registration fee to use this page or its downloadable guide. Your group makes its own arrangements for meeting costs, such as coffee, food, transport, or printed materials.</p></details>
+<details><summary>What if I don’t have three people to invite?</summary><p>You can begin a conversation with one friend rather than waiting for a perfect group. Think together about who else might enjoy reading about Jesus. This website currently provides a way to start with people you know; it does not offer automatic group matching.</p></details>
+<details><summary>What if we don’t finish the reading?</summary><p>Come anyway. Read a shorter section together and talk about it. You can slow the reading plan down and add more gatherings; the goal is discovery and response, not completing an assignment.</p></details>
+<details><summary>What happens after the first four gatherings?</summary><p>Decide together. You might revisit questions from Mark, read another Gospel, or continue meeting around the five questions. As people grow in following Jesus, encourage them to consider gathering other friends too.</p></details>
+<details><summary>How should we handle personal information?</summary><p>Agree as a group before sharing personal stories beyond your circle. Ask permission before recording or passing on someone else’s information. The optional Conversation Quadrants app is a separate tool; its administrators can access its saved records. Do not assume that information entered there is visible only to you.</p></details>
+</div></div></section>
+<section id="resources" class="white"><div class="wrap"><div class="section-top"><p class="eyebrow">A little help along the way</p><h2>Support the conversation.<br>Don’t complicate it.</h2></div><div class="resource-grid"><article class="card resource"><h3>A guide for your first four gatherings</h3><p>The invitation, five questions, Head–Heart–Hands prompts, and the reading path in one simple text file. Use it to prepare—not as a script you must follow word for word.</p><button id="guide-download" class="button secondary" type="button" hidden>Download the facilitator guide</button><noscript><p>You can print this page or use the five questions and reading plan above.</p></noscript></article>
+<article class="card resource"><h3>Conversation Quadrants</h3><p>An optional tool for facilitators to keep track of relationships and conversations. It supports caring for people; it is not required to participate in a Gospel group.</p><a class="button secondary" href="https://conversation-quadrants.web.app/" target="_blank" rel="noopener noreferrer">Open the app <span class="small">&nbsp;(new tab)</span></a><p class="small">Requires a separate Google sign-in. Saved app records are accessible to its administrators.</p></article></div></div></section>
+<section id="about"><div class="wrap"><div class="section-top"><p class="eyebrow">Why Quad Squad?</p><h2>Friendship with a purpose.</h2><p class="lead">We want to help friends discover Jesus in the Gospels, learn to follow him, and help others discover him too.</p><p>Our approach is simple: gather a small circle, open the Word, ask honest questions, and make space for prayer and a practical response. We trust the Holy Spirit to work as we listen to Scripture and one another.</p><p>The facilitator’s role is to welcome, listen, and guide—not to dominate the conversation. Start small, care for people, and keep coming back to Jesus.</p></div></div></section>
+</main>
+<footer class="footer"><div class="wrap"><div class="footer-top"><div><p class="footer-title">QUAD SQUAD</p><p>The Gospel Group</p><p class="small">Friendship. The Gospels. A next step together.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="#about">About</a><a href="#resources">Resources</a><a href="#start">Start a group</a><a id="contact-link" href="#" hidden>Contact</a></nav></div><div class="footer-bottom"><p>Privacy: the meeting planner does not submit your entries. This page includes no analytics or registration database. The linked Conversation Quadrants app is separate and uses Google sign-in and saved records.</p><p>Scripture passages are referenced for reading; no Bible translation is quoted on this page.</p><p>© <span id="year">2026</span> Quad Squad.</p></div></div></footer>
+<script>
+'use strict';
+// Optional: set a public contact email only after the owner approves publication.
+const CONTACT_EMAIL = '';
+const menu=document.getElementById('menu-toggle'),nav=document.getElementById('site-nav');
+menu.hidden=false;nav.classList.add('mobile-closed');
+menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')==='true';menu.setAttribute('aria-expanded',String(!open));nav.classList.toggle('mobile-closed',open);});
+nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{menu.setAttribute('aria-expanded','false');nav.classList.add('mobile-closed');}));
+document.getElementById('year').textContent=new Date().getFullYear();
+if(CONTACT_EMAIL){const a=document.getElementById('contact-link');a.href='mailto:'+CONTACT_EMAIL;a.hidden=false;}
+function downloadText(name,text){const blob=new Blob(['\uFEFF'+text],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500);}
+const invitation='Would you be interested in getting together with a few friends to read about Jesus? We could start with Mark, share what stands out, and talk through our questions. Maybe over coffee?';
+const rhythm=`FIVE QUESTIONS\n1. How are you doing? Share highs and lows.\n2. Where are we going? Following Jesus and helping others discover him (Mark 1:17).\n3. What are you discovering in the Gospel?\n   Head: What did you learn from the passage?\n   Heart: What feelings or questions does it bring up?\n   Hands: How might you respond this week?\n4. How are your people? Care for friends and family; pray together.\n5. What is your next step? Choose one practical response and pray for one another.`;
+const reading=`THE FIRST FOUR GATHERINGS\n1. Read Mark 1 together. Explain the purpose and practice the five questions.\n   Before gathering 2: read Mark 2–6.\n2. Discuss Mark 2–6. Before gathering 3: read Mark 7–11.\n3. Discuss Mark 7–11. Before gathering 4: read Mark 12–16.\n4. Discuss Mark 12–16. Reflect and decide together what comes next.\nAdjust the pace to your group. Read shorter sections and add gatherings as needed.`;
+const copy=document.getElementById('copy-invite');copy.hidden=false;
+copy.addEventListener('click',async()=>{const status=document.getElementById('copy-status');try{if(!navigator.clipboard)throw Error('Clipboard unavailable');await navigator.clipboard.writeText(invitation);status.textContent='Invitation copied. Paste it into your own message and personalize it.';}catch(e){status.textContent='Select the invitation text above, then use your device’s Copy option.';}});
+document.getElementById('plan-download').hidden=false;
+document.getElementById('planner').addEventListener('submit',e=>{e.preventDefault();const value=id=>document.getElementById(id).value.trim();const text=`QUAD SQUAD — FIRST GATHERING\n\nHost: ${value('plan-name')||'Decide together'}\nPlace: ${value('plan-place')||'Decide together'}\nTime: ${value('plan-time')||'Decide together'}\nGroup: you and three friends\n\nINVITATION\n${invitation}\n\nFIRST GATHERING\nRead Mark 1 together. Bring a Bible or a Bible app. Invite each person to notice something that stands out.\n\n${rhythm}\n\n${reading}\n\nNOTES\n${value('plan-notes')||'None added.'}\n\nThis plan was created locally; the website has not sent invitations or registered a group.\n`;downloadText('quad-squad-meeting-plan.txt',text);document.getElementById('plan-status').textContent='Your plan is ready for download. Share it with your friends yourself; no invitation was sent.';});
+document.getElementById('guide-download').hidden=false;
+document.getElementById('guide-download').addEventListener('click',()=>downloadText('quad-squad-facilitator-guide.txt',`QUAD SQUAD — THE GOSPEL GROUP\nA guide for four friends discovering Jesus together\n\nPURPOSE\nDiscover Jesus in the Gospels, learn to follow him, and help others discover him too. Four includes the facilitator: you and three friends.\n\nINVITE\n${invitation}\n\nBEFORE YOU BEGIN\nChoose a welcoming place and agree on a time and frequency. A suggested starting length is 60–90 minutes; adjust together. Explain that this is a Christian Gospel group and that honest questions are welcome. Agree on how personal information may be shared.\n\nFACILITATE, DON'T LECTURE\nRead the text. Ask what stands out and what in the passage supports an observation. Encourage everyone to contribute without forcing anyone to speak. Say when you don't know an answer. Pray and leave room for reflection.\n\n${rhythm}\n\n${reading}\n\nCARE FOR PEOPLE\nDo not turn relationships into targets. Listen, ask permission, and respect others' choices. Do not record or share personal information without considering consent and access. The Conversation Quadrants app is optional; administrators can access its saved records.\n\nNEXT STEPS\nEnd each gathering with one practical response and prayer. After the first four gatherings, choose the next reading together. Consider who else might welcome a similar invitation.\n\nScripture references only; no translation is quoted.\n`));
+</script>
 </body>
 </html>
